@@ -26,11 +26,11 @@ variable "resource_group_name" {
 }
 
 variable "acr_name" {
-  default = "acr-150425-assignment" 
+  default = "acr150425assignment" 
 }
 
 variable "aks_cluster_name" {
-  default = "aks-150425-assignment"
+  default = "aks150425assignment"
 }
 
 variable "dns_prefix" {
