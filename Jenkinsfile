@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         ACR_NAME = 'acr-150425-assignment'
-        AZURE_CREDENTIALS_ID = ''
+        AZURE_CREDENTIALS_ID = 'service-principal-kubernetes'
         ACR_LOGIN_SERVER = "${ACR_NAME}.azurecr.io"
         IMAGE_NAME = 'api-kubernetes150425'
         IMAGE_TAG = 'latest'
