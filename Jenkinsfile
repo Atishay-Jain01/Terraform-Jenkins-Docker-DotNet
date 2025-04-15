@@ -21,7 +21,7 @@ pipeline {
 
         stage('Build .NET App') {
             steps {
-                bat 'dotnet publish DotNetWebAPI\DotNetWebAPI.csproj. -c Release -o out'
+                bat 'dotnet publish DotNetWebAPI\\DotNetWebAPI.csproj. -c Release -o out'
             }
         }
 
