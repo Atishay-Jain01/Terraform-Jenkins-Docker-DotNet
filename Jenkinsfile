@@ -14,7 +14,7 @@ pipeline {
         IMAGE_TAG = 'latest'
         RESOURCE_GROUP = 'rg-aks-assignment'
         AKS_CLUSTER = 'aks-150425-assignment'
-        TF_WORKING_DIR = '.'
+        TF_WORKING_DIR = 'terraform'
     }
 
     stages {
