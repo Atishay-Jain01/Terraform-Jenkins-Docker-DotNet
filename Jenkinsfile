@@ -4,6 +4,10 @@ pipeline {
     environment {
         DOTNET_PATH = 'C:\\Program Files\\dotnet'
         PATH = "${DOTNET_PATH};${PATH}"
+
+        DOCKER_PATH = 'C:\\Program Files\\Docker\\Docker\\resources\\bin'
+        PATH = "${DOCKER_PATH};${PATH}"
+        
         ACR_NAME = 'acr-150425-assignment'
         AZURE_CREDENTIALS_ID = 'service-principal-kubernetes'
         ACR_LOGIN_SERVER = "${ACR_NAME}.azurecr.io"
