@@ -9,13 +9,13 @@ pipeline {
         
         PATH = "${DOTNET_PATH};${DOCKER_PATH};${TERRAFORM_PATH};${AZURE_CLI_PATH};${PATH}"
         
-        ACR_NAME = 'acr-150425-assignment'
+        ACR_NAME = 'acr150425assignment'
         AZURE_CREDENTIALS_ID = 'service-principal-kubernetes'
         ACR_LOGIN_SERVER = "${ACR_NAME}.azurecr.io"
         IMAGE_NAME = 'api-kubernetes150425'
         IMAGE_TAG = 'latest'
         RESOURCE_GROUP = 'rg-aks-assignment'
-        AKS_CLUSTER = 'aks-150425-assignment'
+        AKS_CLUSTER = 'aks150425assignment'
         TF_WORKING_DIR = 'terraform'
     }
 
