@@ -96,7 +96,7 @@ pipeline {
 
         stage('Deploy to AKS') {
             steps {
-                bat "kubectl apply -f WebApiJenkins/test.yaml"
+                bat "kubectl apply -f deployment.yml"
             }
         }
     }
