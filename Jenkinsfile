@@ -97,6 +97,7 @@ pipeline {
         stage('Deploy to AKS') {
             steps {
                 bat "kubectl apply -f deployment.yml"
+                bat "kubectl get service dotnet-api-service"
             }
         }
     }
